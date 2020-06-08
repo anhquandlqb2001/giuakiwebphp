@@ -1,0 +1,155 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+}
+
+.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-logo-link {
+    text-decoration: none;
+}
+
+.header-logo {
+    color: black;
+    font-size: 2rem;
+}
+
+.header-list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+.header-item {
+    list-style: none;
+    margin-left: 30px;
+    align-self: center;
+}
+
+#login-btn {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-item-link {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+
+/* Login form */
+.modal .login-container,
+.modal .signup-container {
+    display: none;
+}
+
+.modal.showLogin,
+.modal.showSignup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal.showLogin .clickedOut,
+.modal.showSignup .clickedOut {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal.showLogin .login-container {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    height: 50vh;
+    background-color: whitesmoke;
+    align-self: center;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.modal.modal.showSignup .signup-container {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    height: 50vh;
+    background-color: whitesmoke;
+    align-self: center;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.checkOut:checked .modal {
+    display: none;
+}
+
+.form-title-con {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.form-title {
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-title.active {
+    background-color: rgb(236, 103, 42);
+}
+
+.form-container {
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+}
+
+.form-container-sec {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+.submit-btn {
+    margin-top: 10px;
+}
+
+.login-container,
+.signup-container {
+    display: none;
+}
+
+/* Sign up */
