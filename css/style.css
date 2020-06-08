@@ -45,8 +45,13 @@ html {
     align-self: center;
 }
 
+.header-item#login-btn {
+    background-color: black;
+}
+
 #login-btn {
     font-size: 2rem;
+    display: block;
     cursor: pointer;
 }
 
