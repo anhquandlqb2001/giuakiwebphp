@@ -13,8 +13,9 @@ if (isset($_POST['login-submit'])) {
     if ($result->num_rows > 0) {
         session_start();
         $_SESSION['username'] = $row['usernameUsers'];
-        header("Location: ../login-out.php");
+        header("Location: ../index.php");
     } else {
+        header("Location: ../index.php");
         exit();
     }
 } 

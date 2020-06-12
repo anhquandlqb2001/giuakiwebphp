@@ -8,7 +8,7 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $sql = "INSERT INTO users(usernameUsers, emailUsers, passUsers) VALUES('$username', '$email', '$password');";
-    header("Location: ../login-out.php");
+    header("Location: ../index.php");
     $conn->query($sql);
 } else {
     header("Location: ../signup.php");
